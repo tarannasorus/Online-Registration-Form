@@ -1,0 +1,10 @@
+/* base styles */
+header {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
