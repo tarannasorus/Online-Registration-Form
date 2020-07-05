@@ -1,10 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
 /* base styles */
+* {
+  font-family: "Architects Daughter", cursive;
+}
+
+body {
+  margin: 0;
+  line-height: 1.4em;
+}
+
 header {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  background: #203444;
+  color: #e2e0e0;
+  text-transform: uppercase;
 }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+.center {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+ul li {
+  margin-left: 0;
+}
+
+.flex-item {
+  margin: auto;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select,
+textarea {
+  background-color: rgb(233, 233, 233);
+}
+
+input,
+select {
+  line-height: 2em;
+}
+
+.submit {
+  color: white;
+  background-color: rgb(0, 146, 146);
+  font-size: 40px;
+}
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+}
+
+hr.1st-line {
+  border-top: 20px solid black;
+}
+
+hr.2nd-line {
+  border-top: 3px solid black;
+}
+
+hr.3rd-line {
+  border-top: 3px solid #bbb;
+}
+
+@media (min-height: 769px) {
+  main {
+    width: 70%;
+  }
 }
