@@ -34,12 +34,13 @@ ul {
 }
 
 ul li {
-  margin-left: 0;
+  padding: 5px 0;
 }
 
 .flex-item {
   margin: auto;
-  padding-top: 10px;
+  padding: 10px 5px;
+
   display: flex;
   flex-direction: column;
 }
@@ -75,7 +76,7 @@ footer {
   text-align: center;
 }
 
-hr.1st-line {
+.top_line {
   border-top: 5px solid black;
   border-bottom: 2px solid black;
   padding: 5px;
@@ -83,12 +84,16 @@ hr.1st-line {
   justify-content: center;
 }
 
-hr.3rd-line {
+.bottom_line {
   border-top: 3px solid #bbb;
 }
 
 .zipcode {
   width: 50%;
+}
+
+ul {
+  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -106,13 +111,17 @@ hr.3rd-line {
     flex-direction: row;
   }
 
-  label {
+  .label {
     align-self: flex-start;
   }
 
-  input,
-  select {
-    align-self: flex-end;
+  .align {
+    margin-right: 0;
     width: 100%;
+  }
+
+  .bottom-div {
+    display: flex;
+    flex-direction: column;
   }
 }
