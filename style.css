@@ -74,6 +74,9 @@ legend {
 
 footer {
   text-align: center;
+  font-style: oblique;
+  color: gray;
+  padding-bottom: 100px;
 }
 
 .top_line {
@@ -102,6 +105,22 @@ ul {
   padding: 0;
 }
 
+.required:after {
+  content: " *";
+  color: rgb(223, 21, 21);
+}
+
+.align {
+  height: 45px;
+}
+
+textarea {
+  height: 115px;
+}
+
+h2 {
+}
+
 /* ----- psuedo styles -----*/
 input:focus,
 select:focus,
@@ -127,6 +146,13 @@ textarea:active {
 
 .submit:active {
   background-color: rgba(172, 163, 172, 0.836);
+}
+
+::placeholder {
+  color: rgb(0, 0, 0);
+
+  font-size: 70%;
+  text-align: right;
 }
 
 /*----- media queries ------*/
