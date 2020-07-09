@@ -143,6 +143,7 @@ textarea:active {
   .flex-item {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .label {
@@ -152,6 +153,7 @@ textarea:active {
   .align {
     margin-right: 0;
     width: 100%;
+    max-width: 500px;
   }
 
   .bottom-div {
