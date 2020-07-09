@@ -55,12 +55,12 @@ textarea {
 
 input,
 select {
-  line-height: 2.5em;
+  line-height: 3em;
 }
 
 .submit {
   color: white;
-  background-color: rgb(79, 175, 175);
+  background-color: rgb(207, 137, 235);
   font-size: 40px;
 }
 
@@ -88,6 +88,12 @@ footer {
   border-top: 3px solid #bbb;
 }
 
+.label {
+  padding-bottom: 5px;
+  display: inline-block;
+  wrap: none;
+}
+
 .zipcode {
   width: 50%;
 }
@@ -96,6 +102,34 @@ ul {
   padding: 0;
 }
 
+/* ----- psuedo styles -----*/
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: rgb(247, 255, 139);
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  background-color: rgb(154, 205, 230);
+}
+
+input:active,
+select:active,
+textarea:active {
+  background-color: rgb(214, 166, 202);
+}
+
+.submit:hover {
+  background-color: rgb(194, 52, 230);
+}
+
+.submit:active {
+  background-color: rgba(172, 163, 172, 0.836);
+}
+
+/*----- media queries ------*/
 @media (min-width: 768px) {
   fieldset {
     display: -ms-flexbox; /* TWEENER - IE 10 */
