@@ -150,10 +150,13 @@ textarea:active {
 }
 
 ::placeholder {
-  color: rgb(110, 110, 110);
+  color: rgb(94, 93, 93);
   font-size: 70%;
   text-align: right;
   font-style: oblique;
+
+  padding-right: 10px;
+  letter-spacing: 1.1px;
 }
 
 /*----- media queries ------*/

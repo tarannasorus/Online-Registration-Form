@@ -33,13 +33,13 @@
           <legend>Contact Information</legend>
 
         <div class="flex-item">
-          <label for="name" class="label" placeholder="Required">Full Name</label>
-          <input type="text" id="name" name="user_name"class="align">
+          <label for="name" class="label" >Full Name</label>
+          <input type="text" id="name" name="user_name"class="align"placeholder="Required" REQUIRED>
         </div>
 
         <div class="flex-item">
-          <label for="email" class="label" placeholder="required">Email Address</label>
-          <input type="text" id="email" name="user_email" class="align">
+          <label for="email" class="label" >Email Address</label>
+          <input type="text" id="email" name="user_email" class="align"placeholder="Required" REQUIRED>
         </div>
 
         <div class="flex-item">
@@ -58,8 +58,9 @@
         </div>
 
         <div class="flex-item">
-          <label for="state" class="label" placeholder="Choose State">State</label>
+          <label for="state" class="label" >State</label>
           <select id="state" class="align">
+            <option vallue="" selected disabled>Choose State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
