@@ -9,11 +9,13 @@ body {
   margin: 0;
   line-height: 1.4em;
 }
+form {
+}
 
 header {
   display: flex;
   justify-content: center;
-  background: #203444;
+  background: #51618d;
   color: #e2e0e0;
   text-transform: uppercase;
 }
@@ -22,6 +24,7 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  border: 0;
 }
 
 .center {
@@ -40,7 +43,6 @@ ul li {
 .flex-item {
   margin: auto;
   padding: 10px 5px;
-
   display: flex;
   flex-direction: column;
 }
@@ -60,12 +62,8 @@ select {
 
 .submit {
   color: white;
-  background-color: rgb(207, 137, 235);
+  background-color: rgb(66, 187, 177);
   font-size: 40px;
-}
-
-fieldset {
-  border: 0;
 }
 
 legend {
@@ -79,16 +77,24 @@ footer {
   padding-bottom: 100px;
 }
 
-.top_line {
-  border-top: 5px solid black;
-  border-bottom: 2px solid black;
-  padding: 5px;
-  width: 95%;
-  justify-content: center;
+.first-line {
+  height: 5px;
+  margin: 20px auto 0;
+  border-top: 4px solid #3a4e66;
+  width: 93%;
 }
 
-.bottom_line {
-  border-top: 3px solid #bbb;
+.second-line {
+  height: 10px;
+  margin: 2px auto 0;
+  border-top: 2px solid #3a4e66;
+  width: 93%;
+}
+
+.third-line {
+  height: 10px;
+  margin: 2px auto 0;
+  border-top: 2px solid #3a4e66;
 }
 
 .label {
@@ -103,11 +109,6 @@ footer {
 
 ul {
   padding: 0;
-}
-
-.required:after {
-  content: " *";
-  color: rgb(223, 21, 21);
 }
 
 .align {
@@ -125,23 +126,23 @@ h2 {
 input:focus,
 select:focus,
 textarea:focus {
-  background-color: rgb(247, 255, 139);
+  background-color: rgb(196, 221, 245);
 }
 
 input:hover,
 select:hover,
 textarea:hover {
-  background-color: rgb(154, 205, 230);
+  background-color: rgb(190, 226, 228);
 }
 
 input:active,
 select:active,
 textarea:active {
-  background-color: rgb(214, 166, 202);
+  background-color: rgb(255, 203, 203);
 }
 
 .submit:hover {
-  background-color: rgb(194, 52, 230);
+  background-color: rgb(223, 118, 118);
 }
 
 .submit:active {
@@ -149,10 +150,10 @@ textarea:active {
 }
 
 ::placeholder {
-  color: rgb(0, 0, 0);
-
+  color: rgb(110, 110, 110);
   font-size: 70%;
   text-align: right;
+  font-style: oblique;
 }
 
 /*----- media queries ------*/
@@ -185,5 +186,15 @@ textarea:active {
   .bottom-div {
     display: flex;
     flex-direction: column;
+  }
+
+  .first-line {
+    width: 90%;
+    max-width: 700px;
+  }
+
+  .second-line {
+    width: 90%;
+    max-width: 700px;
   }
 }
