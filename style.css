@@ -126,26 +126,31 @@ input:focus,
 select:focus,
 textarea:focus {
   background-color: rgb(196, 221, 245);
+  transition: 1.5s;
 }
 
 input:hover,
 select:hover,
 textarea:hover {
   background-color: rgb(190, 226, 228);
+  transition: 1s;
 }
 
 input:active,
 select:active,
 textarea:active {
   background-color: rgb(255, 203, 203);
+  transition: 1.5s;
 }
 
 .submit:hover {
   background-color: rgb(223, 118, 118);
+  transition: 1s;
 }
 
 .submit:active {
   background-color: rgba(172, 163, 172, 0.836);
+  transition: 1.5s;
 }
 
 ::placeholder {
